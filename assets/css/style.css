@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.geral {
+    background-color: aqua;
+    height: 350px;
+    
+   }
+   .container{
+   
+       background-color: rgba(39, 185, 137, 0.829);
+       
+       
+   }
+   
+   section {
+       display: flex;
+       justify-content: center;
+   }
+   
+   .menu {
+       display: flex;
+       justify-content: center;
+       width: 900px;
+       height: 70px;
+   }
+   
+   .menu-left {
+       display: flex;
+       background-color: bisque;
+       flex: 1;
+       }
+   
+   .menu-right {
+       display: flex;
+       background-color: beige;
+       flex: 2;
+   }
+   
+   .logo {
+       background-color: brown;
+       width: 70px;
+       height: 70px;
+       border-radius: 50%;
+       margin: 1px;
+   }
+   
+   .banner {
+       display: flex;
+       background-color: beige;
+       height: 200px;
+   }
