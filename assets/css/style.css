@@ -1,137 +1,275 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
 * {
-  margin: 0;
-  padding: 0;
+    padding: 0;
+    margin: 0;
 }
 
 
-
-.geral {
-  height: 900px;
+.navbar {
+    height: 70px;
+    background-color: rgba(2, 2, 2, 0.8);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(30, 30, 30, 0.3);
+    backdrop-filter: blur(8px);
 }
 
 .container {
-  width: 900px;
-  background-color: rgba(2, 2, 2, 0.9);
-}
-
-.banner {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100%;
 }
 
- .containers {
-    width: 900px;
-    background-image: url('../img/espaco.jpg');
+.logo-img {
+    width: 70px;
+    height: 70px;
+    margin-right: 1px;
+    background-image: url('../img/astronauta.png');
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    
-}
-
-
-
-section {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  width: 900px;
-  height: 70px;
-}
-
-
-.menu-left {
-  display: flex;
-  flex: 2;
+    background-position: center;
 }
 
 .menu-right {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo {
-  background-image: url("../img/astronauta.png");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
-  border-radius: 100px;
-  width: 70px;
-  height: 70px;
-  margin: 1px;
-}
-.links {
-    font-family: 'open sans';
     display: flex;
     align-items: center;
-    margin: 10px;
-}
-
-.links, 
-a {
-    text-decoration: none;
-    margin: 7px;
-    font-weight: bold;
-    color: rgb(117, 119, 121);
-    transform: color 0.15s ease-in;
-
-}
-
-.links a:hover  {
-    color: chocolate;
-}
-.banner {
-  display: flex;
-
-  height: 200px;
-}
-
-.news {
-  display: flex;
-  height: 100px;
-  
-}
-
-.news-right {
-  flex: 1;
-  background-color: blue;
-}
-
-.news-left {
     flex: 2;
-    background-color: brown;
 }
 
-.titulo {
+.menu-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.links a {
+    font-family: "open sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.links a,
+.menu-left a {
+    padding: 0 5px;
+    text-decoration: none;
+    color: white;
+    transition: color  0.15s ease-in-out;
+}
+
+.links a:hover,
+.menu-left a:hover {
+ color: chocolate;
+}
+
+.banner{
+  
+    height: 500px;
+}
+
+.banner img {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -10;
+    width: 100%;
+    height: 500px
+}
+
+.info-section {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.info-section .news {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-section  .news-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
-  background-color: greenyellow;
 }
 
-.eventos {
-  display: flex;
-  width: 900px;
-  height: 200px;
+.info-section  .news-left {
+    flex: 2;
 }
 
-.eventos-1,
-.eventos-2,
-.eventos-3 {
-  flex: 1;
-  background-color: darkseagreen;
-  margin: 10px;
+.info-section  .news-left h3,
+p {
+    text-align: center;
+
 }
+
+.info-section  .news-left div {
+    padding: 10px;
+}
+
+.info-section  .news-left div  p{
+    padding-bottom: 2px;
+    line-height: 1.2;
+}
+
+.news-right button {
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    background-color: rgba(2, 2, 2, 0.8);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: opacity 0.15ms ease-in-out;
+}
+
+.news-right button:hover {
+    opacity: 0.8;
+}
+
+.grid {
+    height: 300px;
+    background-image: url('../img/universo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.grid article {
+    width: 100%;
+}
+
+.grid .eventos {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 120px);
+    height: 120px;
+    column-gap: 20px;
+
+} 
+
+.grid .eventos .eventos-1 {
+    background-image: url('../img/mundosenai.png');
+    background-position: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+
+.grid .eventos .eventos-2 {
+    background-image: url('../img/inovasenai.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+
+.grid .eventos .eventos-3 {
+    background-image: url('../img/grandprix.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+
+.grid .container .titulo {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.Senai-setion {
+    background-color: white;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Senai-setion .container  {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.Senai-setion .news {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Senai-setion .news .news-left {
+    flex: 2;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.Senai-setion .news .news-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+}
+
+.news .news-right .img-1  {
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/senai1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.news .news-right .img-2  {
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/senai2.jfif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
 
 footer {
-    height: 1000px;
+  height: 50px;
+  background-color: rgba(2, 2, 2, 0.8);
 }
+
+.copy-geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.copy-geral  p {
+    color:white;
+}
+
+
+
