@@ -9,10 +9,10 @@
 
 .navbar {
     height: 70px;
-    background-color: rgba(2, 2, 2, 0.8);
+    background-color: rgba(2, 2, 2, 0.7);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(30, 30, 30, 0.3);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(20px);
 }
 
 .container {
@@ -68,7 +68,7 @@
 }
 
 .banner{
-  
+    width: 100%;
     height: 500px;
 }
 
@@ -79,7 +79,7 @@
     left: 0;
     z-index: -10;
     width: 100%;
-    height: 500px
+    height: 600px
 }
 
 .info-section {
@@ -139,6 +139,7 @@ p {
 }
 
 .grid {
+    z-index: 12;
     height: 300px;
     background-image: url('../img/universo.jpg');
     background-position: center;
@@ -157,7 +158,7 @@ p {
     justify-content: center;
     grid-template-columns: repeat(3, 120px);
     height: 120px;
-    column-gap: 20px;
+    column-gap: 50px;
 
 } 
 
@@ -265,10 +266,13 @@ footer {
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding-bottom: 300px;
+    
 }
 
 .copy-geral  p {
     color:white;
+
 }
 
 
