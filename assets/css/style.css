@@ -54,6 +54,10 @@
     text-transform: uppercase;
 }
 
+.news-left div {
+    font-weight: 600;
+}
+
 .links a,
 .menu-left a {
     padding: 0 5px;
@@ -162,13 +166,23 @@ p {
 
 } 
 
-.grid .eventos .eventos-1 {
+.grid .eventos .eventos-1
+ {
     background-image: url('../img/mundosenai.png');
     background-position: 5%;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
+    box-shadow: -3px 5px 12px rgb(226, 31, 168);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 
+}
+
+.eventos .eventos-1:hover,
+.eventos-2:hover,
+.eventos-3:hover{
+    transform: translateY(-0.8rem);
 }
 
 .grid .eventos .eventos-2 {
@@ -177,7 +191,9 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
-
+    box-shadow: -3px 5px 12px rgb(153, 49, 194);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 
 .grid .eventos .eventos-3 {
@@ -186,6 +202,9 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
+    box-shadow: -3px 5px 12px rgb(58, 169, 233);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 
 }
 
@@ -244,6 +263,13 @@ p {
     border-radius: 50%;
 }
 
+.news-left p{
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 8px;
+    text-align: center;
+    line-height: 1.2;
+}
 .news .news-right .img-2  {
     width: 100px;
     height: 100px;
@@ -266,7 +292,7 @@ footer {
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding-bottom: 300px;
+  
     
 }
 
