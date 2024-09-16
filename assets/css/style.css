@@ -83,7 +83,7 @@
     left: 0;
     z-index: -10;
     width: 100%;
-    height: 600px
+    height: 580px
 }
 
 .info-section {
@@ -217,7 +217,7 @@ p {
 .Senai-setion {
     background-color: white;
     display: flex;
-    height: 200px;
+    height: 300px;
     justify-content: center;
     align-items: center;
 }
@@ -228,6 +228,7 @@ p {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    z-index: 12px;
 }
 
 .Senai-setion .news {
@@ -235,6 +236,7 @@ p {
     height: 100%;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .Senai-setion .news .news-left {
@@ -295,6 +297,17 @@ footer {
   
     
 }
+
+  .container-form {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  
+  form {
+    width: 100%;
+  }
+
 
 .copy-geral  p {
     color:white;
