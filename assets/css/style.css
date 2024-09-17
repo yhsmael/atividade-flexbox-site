@@ -299,14 +299,22 @@ footer {
 }
 
   .container-form {
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
   }
 
   
   form {
-    width: 100%;
+    width: 900px;
+ 
+    
+  }
+
+ .form-floating {
+    width: 70%;
+    padding-bottom: 10px
   }
 
 
